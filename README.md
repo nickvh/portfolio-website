@@ -10,12 +10,61 @@ A beautiful, responsive photo gallery website with a clean black and white theme
 - 🖼️ Lightbox viewer with keyboard navigation
 - 📄 About page with contact information
 - ⚡ Fast and lightweight
+- 🚀 Automated build and deployment process
+- 🔄 GitHub Actions CI/CD integration
 
 ## Quick Start
 
 1. **View the website**: Open `index.html` in any web browser
 2. **Add your photos**: Place image files in the `images/` folder
-3. **Update the gallery**: Run the Python script (see below)
+3. **Build**: Run `make build` or `npm run build`
+4. **Deploy**: Run `make deploy` or `npm run deploy`
+
+## Build Process
+
+This project includes multiple build systems - choose what works best for you:
+
+### Option 1: Make (Recommended)
+
+```bash
+make help           # Show all available commands
+make build          # Update image list
+make deploy         # Build and deploy to GitHub Pages
+make serve          # Start local development server
+make update-images  # Update image list only
+make clean          # Clean up generated files
+```
+
+### Option 2: NPM Scripts
+
+```bash
+npm run build       # Update image list
+npm run deploy      # Build and deploy
+npm start           # Start local server
+npm run serve       # Same as start
+npm run update-images  # Update image list only
+```
+
+### Option 3: Direct Scripts
+
+```bash
+python3 generate_image_list.py  # Update images
+./deploy.sh                      # Deploy to GitHub
+```
+
+## Automated Deployment (GitHub Actions)
+
+The project includes a GitHub Actions workflow that automatically:
+1. Scans the `images/` folder
+2. Updates the image list in `script.js`
+3. Deploys to GitHub Pages
+
+**Setup:**
+1. Push your code to GitHub
+2. Enable GitHub Pages in Settings → Pages
+3. Every push to `main` branch automatically deploys!
+
+No manual build needed - just push your changes!
 
 ## Adding New Photos
 

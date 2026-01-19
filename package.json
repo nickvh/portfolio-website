@@ -1,0 +1,24 @@
+{
+  "name": "photo-portfolio",
+  "version": "1.0.0",
+  "description": "A beautiful photo portfolio website with black and white theme",
+  "scripts": {
+    "update-images": "python3 generate_image_list.py",
+    "build": "npm run update-images",
+    "deploy": "npm run build && ./deploy.sh",
+    "serve": "python3 -m http.server 8000",
+    "start": "npm run serve"
+  },
+  "keywords": [
+    "portfolio",
+    "photography",
+    "gallery",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/YOUR-REPO.git"
+  }
+}
