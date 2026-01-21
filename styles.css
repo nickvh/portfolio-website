@@ -68,6 +68,100 @@ header h1 {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Home Page Styles */
+.home-section {
+    padding: 60px 0;
+}
+
+.gallery-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    padding: 60px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    border-color: #000;
+}
+
+.gallery-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.gallery-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.view-gallery {
+    display: inline-block;
+    font-weight: 600;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.gallery-card:hover .view-gallery {
+    transform: translateX(5px);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Gallery Title */
+.gallery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    color: #000;
+}
+
+/* No Images Message */
+.no-images-message {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.no-images-message h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.no-images-message p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.no-images-message code {
+    background: #f4f4f4;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #000;
+}
+
 /* Filter Buttons */
 .filter-buttons {
     display: flex;

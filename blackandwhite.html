@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black & White Gallery - Photo Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Photo Portfolio</h1>
+            <p class="subtitle">A collection of my favorite moments</p>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="color.html" class="nav-link">Color</a>
+                <a href="blackandwhite.html" class="nav-link active">Black & White</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="gallery-title">Black & White Gallery</h2>
+        
+        <!-- Photo Gallery Grid - Images loaded dynamically by script.js -->
+        <div class="gallery" id="bw-gallery">
+            <!-- Gallery items will be generated automatically from images/blackandwhite folder -->
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Photo Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="gallery-bw.js"></script>
+</body>
+</html>
