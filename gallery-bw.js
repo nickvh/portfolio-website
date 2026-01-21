@@ -4,8 +4,19 @@
 // List of all images in the blackandwhite folder
 // Add your black and white photos to images/blackandwhite/ folder
 const bwImages = [
-    // Add your black and white image filenames here
-    // Example: 'photo1.jpg', 'photo2.jpg', etc.
+    'Kissings-1-2.jpg',
+    'Kissings-1.jpg',
+    'Kissings-10.jpg',
+    'Kissings-11.jpg',
+    'Kissings-12.jpg',
+    'Kissings-14.jpg',
+    'Kissings-15.jpg',
+    'Kissings-16.jpg',
+    'Kissings-5.jpg',
+    'Kissings-6.jpg',
+    'Kissings-7.jpg',
+    'Kissings-8.jpg',
+    'Kissings-9.jpg'
 ];
 
 // Dynamically generate gallery items

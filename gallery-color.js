@@ -3,23 +3,10 @@
 
 // List of all images in the color folder
 const colorImages = [
-    'Kissings-1-2.jpg',
-    'Kissings-1.jpg',
+    'Kissings-13.jpg',
     'Kissings-2.jpg',
     'Kissings-3.jpg',
-    'Kissings-4.jpg',
-    'Kissings-5.jpg',
-    'Kissings-6.jpg',
-    'Kissings-7.jpg',
-    'Kissings-8.jpg',
-    'Kissings-9.jpg',
-    'Kissings-10.jpg',
-    'Kissings-11.jpg',
-    'Kissings-12.jpg',
-    'Kissings-13.jpg',
-    'Kissings-14.jpg',
-    'Kissings-15.jpg',
-    'Kissings-16.jpg'
+    'Kissings-4.jpg'
 ];
 
 // Dynamically generate gallery items
